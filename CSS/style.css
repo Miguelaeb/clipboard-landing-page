@@ -19,7 +19,7 @@ body {
     margin: auto;
     font-size: 18px;
     font-family: 'Bai Jamjuree', sans-serif;
-    background-image: url('./images/bg-header-mobile.png');
+    background-image: url('../images/bg-header-mobile.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -131,7 +131,7 @@ a:hover {
 @media screen and (min-width: 1440px) {
 
     body {
-        background-image: url('./images/bg-header-desktop.png');
+        background-image: url('../images/bg-header-desktop.png');
     }
 
     .title h1 {
