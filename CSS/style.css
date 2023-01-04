@@ -1,0 +1,251 @@
+/* Second */
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+    text-decoration: none;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url('/images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header-section {
+    margin-top: 150px;
+}
+
+.title {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.description {
+    color: var(--Grayish-Blue);
+    line-height: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.title h1 {
+    font-size: 2rem;
+}
+
+.header-section-description {
+    font-size: 1.1rem;
+}
+
+.buttons div{
+    margin: 3.8rem 0;
+}
+
+.ios-button a {
+    color: #fff;
+    padding: 1rem 5.2em;
+    border-radius: 3rem;
+    background-color: var(--Strong-Cyan);
+    box-shadow: 2px 2px 8px hsl(171, 66%, 44%), 2px 2px 8px hsl(171, 66%, 44%);
+}
+
+.mac-button a {
+    color: #fff;
+    padding: 1rem 5.2em;
+    border-radius: 3rem;
+    background-color: var(--Light-Blue);
+    box-shadow: 2px 2px 8px hsl(233, 100%, 69%), 2px 2px 8px hsl(233, 100%, 69%);
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+.keep-track-section, .acces-section {
+    width: 100%;
+}
+
+.keep-track-image img, .acces-section-image img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sponsors-section div {
+    margin: 80px 0;
+}
+
+.footer-section {
+    margin-top: 6rem;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f5f6f8;
+}
+
+.footer-logo img{
+    width: 50px;
+}
+
+.footer-links div a {
+    display: block;
+    margin: 30px 0;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.footer-links div a:hover, .footer-icons div i:hover {
+    color: var(--Strong-Cyan);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons div i{
+    font-size: 1.5rem;
+    margin: 0 20px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background-image: url('/images/bg-header-desktop.png');
+    }
+
+    .title h1 {
+        font-size: 2.5rem; 
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .header-section-description p {
+        padding: 0 21rem; 
+    }
+
+    .keep-track-description p, .acces-section-description p  {
+        padding: 0 18rem; 
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .keep-track-image-specs {
+        display: flex;
+        gap: 100px;
+    }
+
+    .keep-track-specs {
+        width: 50%;
+        height: 50%;
+        text-align: left;
+    }
+
+    /* .keep-track-image {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .keep-track-image img {
+        display: block;
+        width: 105%;
+        height: auto;
+        transform: translateX(-5%);
+    } */
+
+    .keep-track-specs-description {
+        padding-right: 10rem; 
+    }
+
+    .supercharge-section-tools {
+        display: flex;
+        gap: 20px;
+    }
+
+    .create, .plain, .sneak {
+        width: 33.3%;
+    }
+
+    .create img {
+        width: 35px;
+    }
+    
+    .create p, .plain p {
+        padding: 0 20px;
+    }
+    
+    .sneak p {
+        padding: 0 10px;
+    }
+
+    .sponsors-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .acces-section-image img {
+        width: 70%;
+    }
+
+    .clipboard-section-description p {
+        padding: 0 18rem;
+    }
+
+    .footer-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 200px;
+    }
+
+    .logo-links {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 100px;
+    }
+
+    .footer-links div a {
+        text-align: left;
+    }
+    
+}
+
+@media screen and (min-width: 1500px) {
+
+    body {
+        max-width: 2000px;
+    }
+}
